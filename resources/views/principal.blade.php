@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Sistema Academico">
+    <meta name="description" content="Sistema de compras y ventas">
     <meta name="author" content="gladys laime">
-    <meta name="keyword" content="Sistema Academico">
+    <meta name="keyword" content="Sistema de compras y ventas">
     <!--link rel="shortcut icon" href="img/favicon.png"-->
-    <title>Sistema Academico</title>
+    <title>Sistema de compras y ventas</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Icons -->
     <link href="css/plantilla.css" rel="stylesheet">
