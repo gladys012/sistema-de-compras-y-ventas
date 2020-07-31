@@ -341,7 +341,8 @@
                             console.log(error);
                     });
                 }else if(this.verificaCi == 1 && this.ci!=''){ 
-                    this.dismissCountDown = this.dismissSecs;
+                    //this.dismissCountDown = this.dismissSecs;
+                    alert('La persona ya existe');
                     this.verificaCi = 0;}                
            },
             
