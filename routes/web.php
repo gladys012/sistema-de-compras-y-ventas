@@ -51,6 +51,12 @@ Route::group(['middleware'=>['auth']],function(){
         Route::get('/proveedor', 'ProveedorController@index');
         Route::post('/proveedor/registrar', 'ProveedorController@store');
         Route::put('/proveedor/actualizar', 'ProveedorController@update');
+
+        Route::get('/ingreso', 'IngresoController@index');
+        Route::post('/ingreso/registrar', 'IngresoController@store');
+        Route::put('/ingreso/desactivar', 'IngresoController@desactivar');
+        Route::get('/ingreso/obtenerCabecera', 'IngresoController@obtenerCabecera');
+        Route::get('/ingreso/obtenerDetalles', 'IngresoController@obtenerDetalles');
          
         Route::get('/cliente', 'ClienteController@index');
         Route::post('/cliente/registrar', 'ClienteController@store');
@@ -64,19 +70,6 @@ Route::group(['middleware'=>['auth']],function(){
         Route::put('/user/actualizar', 'UserController@update');
         Route::put('/user/desactivar', 'UserController@desactivar');
         Route::put('/user/activar', 'UserController@activar');
-
-        /*Route::get('/persona', 'PersonaController@index');
-        Route::post('/persona/registrar', 'PersonaController@store');
-        Route::put('/persona/actualizar', 'PersonaController@update');
-        Route::put('/persona/desactivar', 'PersonaController@desactivar');
-        Route::put('/persona/activar', 'PersonaController@activar');
-        Route::get('/persona/selectpersona', 'PersonaController@index');        
-        Route::get('/notas_materia', 'Notas_MateriaController@index');
-        Route::get('/rol', 'RolController@index');
-        Route::get('/rol/selectRol', 'RolController@selectRol');
-        Route::get('/user', 'UserController@index');
-        Route::post('/user/registrar', 'UserController@store');
-        Route::put('/user/actualizar', 'UserController@update');*/
 
     });
 
@@ -93,6 +86,5 @@ Route::group(['middleware'=>['auth']],function(){
 });
 
 
-//Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
+

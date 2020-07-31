@@ -15,7 +15,7 @@ class ArticulosController extends Controller
         $criterio = $request->criterio;
         
         if ($buscar==''){*/
-            $articulos = Articulo::join('categorias','articulos.idcategorias','=','categorias.id')
+            $articulos = Articulo::join('categorias','articulos.idcategoria','=','categorias.id')
             ->select('articulos.id','articulos.idcategoria','articulos.codigo','articulos.nombre','categorias.nombre as nombre_categoria','articulos.precio_venta','articulos.stock','articulos.descripcion','articulos.condicion')
             ->orderBy('articulos.id', 'desc')->paginate(5);
         /*}

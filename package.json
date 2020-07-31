@@ -26,11 +26,12 @@
         "browser-sync-webpack-plugin": "^2.0.1"
     },
     "dependencies": {
-        "@coreui/coreui": "^3.0.0",               
+        "@coreui/coreui": "^3.0.0",
         "cross-env": "^7.0.2",
         "free": "^1.0.0",
         "moment": "^2.26.0",
         "sweetalert2": "^9.10.12",
-        "vue-barcode": "^1.2.0"        
+        "vue-barcode": "^1.2.0",
+        "vue-select": "^3.10.7"
     }
 }
